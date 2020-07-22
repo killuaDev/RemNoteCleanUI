@@ -1,0 +1,161 @@
+:root {
+  --accent: #67bcf9;
+	--accent2: #0cb2ff;
+	--accent3: #2584f8;
+	--accentstrong: #ff0000a3;
+	--bgcol: #fff;
+	--bglight: #f8f8f8;
+	--bgmed: #bfbfbf;
+	--border: #c8c8c8;
+	--borderlight: #e4e4e4;
+	--codebg: #1d2429;
+	--currentsel: hsla(191, 0%, 88%, .659);
+	--currentsel2: hsl(189, 0%, 77%);
+	--flash: #ffffa5;
+	--focusrem: #ff5d7240;
+	--hover: hsla(191, 0%, 88%, .659);
+	--linknode: #0e8dfc;
+	--neutraldark: #4d4d4d;
+	--portal: #d6f4f9;
+	--queuebadge: black;
+	--queuebg: #1179ff;
+	--queuetext: white;
+	--quotebg: #eff8f6;
+	--quoteborder: #e7e7e7;
+	--quotetext: #f90b63;
+	--remcustomicon: #33e308;
+	--remindent: #5aadea99;
+	--remlink: #0072e4;
+	--remrefbg: #f7fdc4db;
+	--search: #b67fec;
+	--secondary: #85e80e;
+	--shadow: #00000030;
+	--tagbg: #feffd5;
+	--tagcol: #303030;
+  --text: black;
+    
+}
+
+/* Sidebar */
+#homepage #content #document-sidebar #DocumentationList .document-list-item__container .document-list-item,
+#homepage #content #document-sidebar #DocumentationList .document-list-item__container .documentListHeader,
+#homepage #content #document-sidebar #documentList .document-list-item__container .document-list-item,
+#homepage #content #document-sidebar #documentList .document-list-item__container .documentListHeader,
+#main #content #document-sidebar #DocumentationList .document-list-item__container .document-list-item,
+#main #content #document-sidebar #DocumentationList .document-list-item__container .documentListHeader,
+#main #content #document-sidebar #documentList .document-list-item__container .document-list-item,
+#main #content #document-sidebar #documentList .document-list-item__container .documentListHeader {
+ padding:10px 5px 10px;
+ display:block;
+ overflow-wrap:break-word;
+ transition:background-color .1s
+}
+#main #content #document-sidebar {
+	transition: margin-left .1s, height .1s, width .1s, opacity .1s;
+	border-right: solid;
+	border-color: var(--border);
+	border-width: 0.5px;
+	box-shadow: none !important;
+	height: 100%;
+	overflow: hidden;
+	z-index: 4;
+	max-width: 240px;
+	display: flex;
+	flex-direction: column;
+	color: var(--body);
+    background-color: var(--bgcol);
+}
+/* Documents Table */
+.ReactVirtualized__Table__headerRow {
+    height: 40px !important; 
+    overflow: hidden;
+    
+    padding-right: 0px;
+    width: 1201px;
+    border-style: solid;
+    border-radius: .28571429rem;
+    border-color: var(--text);
+    background-color: var(--text);
+    color: var(--bgcol);
+}
+
+.ReactVirtualized__Table__row {
+    overflow: hidden;
+    resize: horizontal;
+    text-overflow: ellipsis !important;
+    padding: 0px;
+    width: 1201px;
+    background: var(--background) !important;
+    border-top: 1px solid var(--border) !important;
+}
+.ui.button {
+	cursor: pointer;
+	display: inline-block;
+	min-height: 1em;
+	outline: 0;
+	border: none;
+	vertical-align: baseline;
+	background: var(--text) none;
+	color: var(--bgcol);
+}
+#DocumentTable .DocumentLink {
+    padding: 10px !important;
+}
+#DocumentTable .DocumentLink:hover {
+    background-color: var(--hover)
+}
+#homepage #content #document-sidebar #document-sidebar_top #logo img,
+#main #content #document-sidebar #document-sidebar_top #logo img {
+	transition: filter .5s;
+	filter: contrast(150%) !important;
+	height: 20px;
+	margin-top: 1px;
+	margin-left: 8px;
+	margin-bottom: 4px;
+	text-align: left;
+}
+#document-sidebar__bottom-menu {
+	padding-top: 4px;
+	font-size: 10px;
+	text-align: center;
+	color: #848484 !important;
+	border-color: var(--border);
+	border-top-color: var(--border);
+	border-top: solid var(--border);
+	border-top-width: medium;
+	border-width: 0px;
+	margin-bottom: 0px;
+	background-color: var(--bglight);
+}
+.body {
+    background-color: var(--bgcol);
+    color: var(--text);
+}
+/*===== sidebar current selection====*/
+#homepage #content #document-sidebar #DocumentationList .document-list-item--opened,
+#homepage #content #document-sidebar #documentList .document-list-item--opened,
+#main #content #document-sidebar #DocumentationList .document-list-item--opened,
+#main #content #document-sidebar #documentList .document-list-item--opened {
+	background-color: var(--currentsel)!important;
+}
+
+#homepage #content #document-sidebar #DocumentationList .document-list-item:hover,
+#homepage #content #document-sidebar #DocumentationList .documentListHeader:hover,
+#homepage #content #document-sidebar #documentList .document-list-item:hover,
+#homepage #content #document-sidebar #documentList .documentListHeader:hover,
+#main #content #document-sidebar #DocumentationList .document-list-item:hover,
+#main #content #document-sidebar #DocumentationList .documentListHeader:hover,
+#main #content #document-sidebar #documentList .document-list-item:hover,
+#main #content #document-sidebar #documentList .documentListHeader:hover {
+	background-color: var(--hover)!important;
+}
+#main #content #document-sidebar #document-sidebar__link:hover {
+	background-color: var(--hover)!important;
+}
+#main #content #document-sidebar #document-sidebar__link:selected {
+	background-color: var(--accent)!important;
+}
+/*======== Editor ===============*/
+#hierarchy-editor .rem-text {
+    border-radius: .28571429rem;
+}
