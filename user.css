@@ -1,5 +1,6 @@
 /* This is my first time making a custom CSS Style, it's very messy, comments will be added. */
-/* Using @import url('https://github.com/killuaDev/RemNoteCleanUI/blob/master/user.css')  should work? */
+
+
 :root {
   --accent: #67bcf9;
 	--accent2: #0cb2ff;
